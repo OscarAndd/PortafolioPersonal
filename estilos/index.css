@@ -143,11 +143,11 @@ div>em {
     border: solid 3px;
     border-style:groove;
     display: flex;
-    width: 500px;
+    width: 55%;
 }
 .showImages img{
     animation: scroll 8s alternate linear infinite;
-    width: 500px;
+    width: 100%;
     height: 300px;
 }
 
