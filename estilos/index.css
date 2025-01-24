@@ -12,7 +12,7 @@ html {
     font-family: cursive;
 }
 
-.divHeader, .containerTable, .containerReviews{
+.divHeader, .containerTable, .containerReviews, .containerImages {
     display: block;
     border: solid;
     margin-left: 30%;
@@ -37,7 +37,7 @@ html {
     display: inline-block;
     font-size: var(--FontSizeAtajos);
     font-style: oblique;
-    
+
 
     max-width: min-content;
     min-width: 47%;
@@ -52,46 +52,52 @@ h1 {
     text-align: center;
     font-family: cursive;
 }
-.title1{
+
+.title1 {
     margin-bottom: 5%;
 }
-.summary{
+
+.summary {
     word-wrap: break-word;
     margin-left: 1%;
     margin-right: 1%;
     text-align: justify;
-    text-justify:center;
-    font-size:1.4vw;
+    text-justify: center;
+    font-size: 1.4vw;
+    font-weight: 50;
 }
 
-.containerTable{
+.containerTable {
 
     border: solid 3px;
     display: block
 }
-.table1{
-    
-    font-family:cursive;
-    font-size:1.4vw;
-    margin:auto;
+
+.table1 {
+
+    font-family: cursive;
+    font-size: 1.4vw;
+    margin: auto;
     /*border-collapse: collapse;*/
     width: 100%;
     text-align: center;
     font-weight: 80;
-    min-width:fit-content;
+    min-width: fit-content;
 }
-table th{
-    
+
+table th {
+
     max-width: 100px;
     border: #000000 3px solid;
 }
-table td{
+
+table td {
     word-wrap: break-word;
     max-width: 100px;
     border: #000000 3px solid;
 }
 
-.title2{
+.title2, h1.titleSkills {
     margin-top: 2%;
     font-size: 1.7vw;
     margin-left: 3%;
@@ -99,30 +105,58 @@ table td{
     font-family: cursive;
 }
 
-.myreviews{
-    
+.myreviews {
+
     /*margin-top: 5%;
     display: flex;
     flex-direction: row;*/
 }
-.myreview1, .myreview2, .myreview3{
+
+.myreview1,
+.myreview2,
+.myreview3 {
 
     vertical-align: middle;
     display: inline-block;
     word-wrap: break-word;
     width: 17vw;
-    height:13vw;
-    padding:2%;
-margin-left: 2%;
-border: solid 3px;
-border-radius: 25%;
-margin-bottom: 5%;
-margin-top: 2%;
-text-align: justify;
-font-size: 1.3vw;
-text-indent: 5%;
+    height: 13vw;
+    padding: 2%;
+    margin-left: 2%;
+    border: solid 3px;
+    border-radius: 25%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    text-align: justify;
+    font-size: 1.3vw;
+    text-indent: 5%;
 }
-div>em{
+
+div>em {
     color: saddlebrown;
     font-weight: normal;
 }
+
+.showImages{
+    overflow: hidden;
+    margin: 3% auto;
+    border: solid 3px;
+    border-style:groove;
+    display: flex;
+    width: 500px;
+}
+.showImages img{
+    animation: scroll 8s alternate linear infinite;
+    width: 500px;
+    height: 300px;
+}
+
+@keyframes scroll {
+    0% {transform: translateX(0);}
+    25% {transform: translateX(0);}
+    33% {transform: translateX(-100%);}
+    60% {transform: translateX(-100%);}
+    66% {transform: translateX(-300%);}
+    100% {transform: translateX(-300%);}
+}
+
