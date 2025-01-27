@@ -1,58 +1,162 @@
-.left-section{
-    width: 300px;
-    height: 590px;
-    position: fixed;
-    background-color: #FFA07A;
-    top: 0;
-    left: 0;
-    padding: 50px;
-    margin: 10px;
-    border: 10px solid black;
-    overflow: auto;
+:root {
+    --FontSizeAtajos: 1.8vw;
 }
 
-.name{
-    font-size: 30px;
-    font-weight: bold;
-    color: #000000;
+html {
+    scroll-behavior: smooth;
+}
+
+.name {
+    font-size: var(--FontSizeAtajos);
+    margin-left: 2%;
+    font-family: cursive;
+}
+
+.divHeader, .containerTable, .containerReviews, .containerImages {
+    display: block;
+    border: solid;
+    margin-left: 30%;
+    margin-right: 1%;
+    font-weight: 800;
+}
+
+.divAtajos>a {
+    text-decoration: none;
+    margin-left: 6%;
+    background-color: rgba(187, 214, 238, 0.1);
+
+}
+
+.divAtajos>a:hover {
+    background-color: rgba(187, 190, 238, 0.5);
+    text-decoration: underline;
+    text-decoration-color: rgb(223, 9, 151);
+}
+
+.divAtajos {
+    display: inline-block;
+    font-size: var(--FontSizeAtajos);
+    font-style: oblique;
+
+
+    max-width: min-content;
+    min-width: 47%;
+    margin-top: 3%;
+    margin-left: 20%;
+}
+
+
+h1 {
+    word-wrap: break-word;
+    margin-top: 6%;
     text-align: center;
+    font-family: cursive;
 }
 
-.selectores{
-    font-size: 16px;
-    padding: 10px;
-    color: #000000;
+.title1 {
+    margin-bottom: 5%;
+}
+
+.summary {
+    word-wrap: break-word;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: justify;
+    text-justify: center;
+    font-size: 1.4vw;
+    font-weight: 50;
+}
+
+.containerTable {
+
+    border: solid 3px;
+    display: block
+}
+
+.table1 {
+
+    font-family: cursive;
+    font-size: 1.4vw;
+    margin: auto;
+    /*border-collapse: collapse;*/
+    width: 100%;
     text-align: center;
-    background-color: #696969;
-    margin: 0 5px 0px 40px;
+    font-weight: 80;
+    min-width: fit-content;
 }
 
-.selector_exp{
-    font-size: 16px;
-    padding: 10px;
-    color: #000000;
-    text-align: center;
-    background-color: #696969;
-    margin: 0 5px 10px 65px;
+table th {
+
+    max-width: 100px;
+    border: #000000 3px solid;
 }
 
-h6{
-    font-size: 20px;
-    font-weight: bold;
-    color: #F5F5F5;
-    text-align: center;
-    margin: 0 5px 10px 5px;
+table td {
+    word-wrap: break-word;
+    max-width: 100px;
+    border: #000000 3px solid;
 }
 
-.seccion1{
-    font-size: 16px;
-    padding: 2px;
-    border: solid 2px white;
+.title2, h1.titleSkills {
+    margin-top: 2%;
+    font-size: 1.7vw;
+    margin-left: 3%;
     text-align: left;
-    background-color: #696969;
+    font-family: cursive;
 }
 
-hr{
-    width: 300px;
-    border: solid 1px white;
+.myreviews {
+
+    /*margin-top: 5%;
+    display: flex;
+    flex-direction: row;*/
 }
+
+.myreview1,
+.myreview2,
+.myreview3 {
+
+    vertical-align: middle;
+    display: inline-block;
+    word-wrap: break-word;
+    width: 17vw;
+    height: 13vw;
+    padding: 2%;
+    margin-left: 2%;
+    border: solid 3px;
+    border-radius: 25%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    text-align: justify;
+    font-size: 1.3vw;
+    text-indent: 5%;
+}
+
+div>em {
+    color: saddlebrown;
+    font-weight: normal;
+}
+
+.showImages{
+    overflow: hidden;
+    margin: 3% auto;
+    border: solid 3px;
+    border-style:groove;
+    display: flex;
+    width: 55%;
+}
+.showImages img{
+    animation: scroll 8s alternate linear infinite;
+    width: 100%;
+    height: 300px;
+}
+
+@keyframes scroll {
+    0% {transform: translateX(0);}
+    25% {transform: translateX(0);}
+    33% {transform: translateX(-100%);}
+    60% {transform: translateX(-100%);}
+    66% {transform: translateX(-300%);}
+    100% {transform: translateX(-300%);}
+}
+
